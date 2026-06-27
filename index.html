@@ -1,153 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shraddha Portfolio</title>
 
-<title>Shraddha Portfolio</title>
+    <meta name="description" content="Personal Portfolio Website of Shraddha Pisal">
+    <meta property="og:title" content="Shraddha Portfolio">
+    <meta property="og:description" content="Frontend Web Developer Portfolio">
 
-<meta name="description"
-content="Personal Portfolio Website">
-
-<meta property="og:title"
-content="Shraddha Portfolio">
-
-<meta property="og:description"
-content="Web Developer Portfolio">
-
-<link rel="icon" href="favicon.ico">
-
-<link rel="stylesheet"
-href="style.css">
-
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <!-- Header -->
+    <header>
+        <h1>Shraddha Portfolio</h1>
 
-<h1>Shraddha Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<nav>
+    <!-- Hero Section -->
+    <section class="hero">
 
-<a href="#about">About</a>
+        <img src="student.jpeg" alt="Shraddha Profile" loading="lazy">
 
-<a href="#skills">Skills</a>
+        <h2>Hello, I'm Shraddha 👋</h2>
 
-<a href="#projects">Projects</a>
+        <p>Frontend Web Developer</p>
 
-<a href="#contact">Contact</a>
+        <a href="#contact">
+            <button type="button">Contact Me</button>
+        </a>
 
-</nav>
+    </section>
 
-</header>
+    <main>
 
-<main>
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
 
-<section id="about">
+            <p>
+                I am passionate about Web Development and currently learning
+                HTML, CSS, JavaScript, Git and Linux. I enjoy building
+                responsive, accessible and user-friendly websites.
+            </p>
+        </section>
 
-<h2>About Me</h2>
+        <!-- Skills -->
+        <section id="skills">
+            <h2>My Skills</h2>
 
-<img
-src="student.jpeg"
-alt="Shraddha Profile"
-loading="lazy">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>Linux</li>
+            </ul>
+        </section>
 
-<p>
-I am learning Web Development.
-</p>
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
 
-</section>
+            <div class="projects">
 
-<section id="skills">
+                <div class="card">
+                    <h3>💼 Portfolio Website</h3>
+                    <p>Personal responsive portfolio website created using HTML and CSS.</p>
+                </div>
 
-<h2>Skills</h2>
+                <div class="card">
+                    <h3>🧮 Calculator</h3>
+                    <p>Calculator using HTML, CSS and JavaScript.</p>
+                </div>
 
-<ul>
+                <div class="card">
+                    <h3>📝 To-Do App</h3>
+                    <p>Simple task management application.</p>
+                </div>
 
-<li>HTML</li>
+            </div>
+        </section>
 
-<li>CSS</li>
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
 
-<li>JavaScript</li>
+            <form>
 
-<li>Git</li>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
 
-<li>Linux</li>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
 
-</ul>
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="5" placeholder="Write your message"></textarea>
 
-</section>
+                <button type="submit">Send Message</button>
 
-<section id="projects">
+            </form>
 
-<h2>Projects</h2>
+        </section>
 
-<div class="card">
-Portfolio Website
-</div>
+    </main>
 
-<div class="card">
-Calculator
-</div>
-
-<div class="card">
-To Do App
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<form>
-
-<label for="name">
-Name
-</label>
-
-<input
-id="name"
-type="text"
-required>
-
-<label for="email">
-Email
-</label>
-
-<input
-id="email"
-type="email"
-required>
-
-<label for="msg">
-Message
-</label>
-
-<textarea
-id="msg">
-</textarea>
-
-<button
-aria-label="Send Message">
-Send
-</button>
-
-</form>
-
-</section>
-
-</main>
-
-<footer>
-
-<p>
-© 2025 Shraddha Pisal
-</p>
-
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Shraddha Pisal | Made with ❤️ using HTML & CSS</p>
+    </footer>
 
 </body>
 </html>
